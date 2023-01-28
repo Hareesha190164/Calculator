@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        height: 97vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        
+    .calculator{
+      
+      width: 400px;   
+    }
+    .screen{
+      text-align: right;
+      color: white;
+      padding: 10px 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 40px;
+      background-color: black;
+    }
+    .cal_rows{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      background-color: black;
+    }
+    button:last-child{
+      background-color: orange;
+      color: white;
+    }
+    button:last-child:hover{
+      background-color: #dfb07e;
+    }
+    .double{
+      flex-basis: 49.7%;
+    }
+    .triple{
+      flex-basis: 74.8%;
+    }
+    button{
+      background-color: #d8d9db;
+      color: black;
+      font-size: 40px;
+      height: 100px;
+      flex-basis: 24.5%;
+    }
+    button:hover{
+      background-color: #ebebeb;
+    }
+
+
+    </style>
+</head>
+<body>
+        <div class="calculator">
+          <H1 style="text-align:center;">CALCULATOR</H1>
+            <section class="screen">
+              0
+            </section>
+            <div class="cal">
+              <section class="cal_rows">
+                <button class="double">c</button>
+                <button>del</button>
+                <button>/</button>
+              </section>
+              <section class="cal_rows">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>*</button>
+              </section>
+              <section class="cal_rows">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>&#8722;</button>
+              </section>
+              <section class="cal_rows">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&#43;</button>
+              </section>
+              <section class="cal_rows">
+                <button class="triple">0</button>
+                <button>&#61;</button>
+              </section>
+            </div>
+        </div> 
+        <script src="/calculator.js"></script>
+</body>
+</html>
